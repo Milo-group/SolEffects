@@ -1,0 +1,2 @@
+This folder includes the code to produce all of the models for all of the structures described in the main text.
+To execute, download the code (Models - Report - JOC.RMD) and all of the CSV files to the same location, and run the code. Not the R packages needed for this code to run, they are indicted at the begining of the RMD file. 
