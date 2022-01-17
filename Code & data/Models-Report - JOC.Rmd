@@ -38,7 +38,7 @@ cv <- function(formula, data, out.col, folds) {
   if (folds == nrow(data)) {
     split.assign <- sample(1:folds, nrow(data), replace = F)
   } else {
-    split.assign <- sample(1:folds, nrow(data), replace = T)
+    split.assign <- caret::createFolds(1:dim(data)[1], folds, list = F)
   }
   cvdat <- cbind(data, split.assign)
   colnames(cvdat)[dim(data)[2] + 1] <- "assign"
